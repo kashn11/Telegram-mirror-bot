@@ -1,0 +1,20 @@
+{
+  "name": "telegram-clone-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --name telegram-mirror-discord --restart-delay=3000 && pm2 logs telegram-mirror-discord --lines 1",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "input": "^1.0.1",
+    "nodemon": "^3.1.0",
+    "telegram": "^2.19.20"
+  }
+}
